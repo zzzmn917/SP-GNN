@@ -1,0 +1,37 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "调试当前文件",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "调试 build_graph.py 文件",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "build_graph.py",
+            "console": "integratedTerminal",
+            "args": [
+                 "--dataset", "diginetica",
+                 "--sample_num", "12"
+            ]
+        },
+        {
+            "name": "调试 main.py 文件",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "main.py",
+            "console": "integratedTerminal",
+            "args": [
+                 "--dataset", "diginetica",
+                //  "--test"
+            ]
+        }
+    ]
+}
