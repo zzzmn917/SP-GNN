@@ -31,7 +31,7 @@ parser.add_argument('--n_iter', type=int, default=1)                            
 parser.add_argument('--dropout_gcn', type=float, default=0, help='Dropout rate.')       # [0, 0.2, 0.4, 0.6, 0.8]
 parser.add_argument('--dropout_local', type=float, default=0, help='Dropout rate.')     # [0, 0.5]
 parser.add_argument('--dropout_global', type=float, default=0.5, help='Dropout rate.')
-parser.add_argument('--dropout_target', type=float, default=0.5, help='Dropout rate.')   # [0, 0.2, 0.5],根据拟合情况，再进行调整
+parser.add_argument('--dropout_target', type=float, default=0.2, help='Dropout rate.')   # [0, 0.2, 0.5],根据拟合情况，再进行调整
 parser.add_argument('--validation', action='store_true', help='validation')
 parser.add_argument('--valid_portion', type=float, default=0.1, help='split the portion')
 parser.add_argument('--alpha', type=float, default=0.2, help='Alpha for the leaky_relu.')

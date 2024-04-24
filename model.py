@@ -221,6 +221,7 @@ def forward(model, data):
     adj = trans_to_cuda(adj).float()
     mask = trans_to_cuda(mask).long()
     inputs = trans_to_cuda(inputs).long()
+    targets = trans_to_cuda(targets).long()
     
 
     hidden , con_loss = model(items, adj, mask, inputs, targets)
